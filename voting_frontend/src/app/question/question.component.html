@@ -1,0 +1,10 @@
+<div>
+  <p>{{question.title}}</p>
+  <div *ngFor="let a of answers">
+    <app-answer
+      name="{{a.name}}"
+      value="{{a.value}}"
+      (select)="answer($event)"
+    ></app-answer>
+  </div>
+</div>

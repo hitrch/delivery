@@ -4,11 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jdriven.ng2boot</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
-
-    <name>parent</name>
-    <description>Voting project parent.</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -22,8 +19,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
     <modules>
         <module>voting_frontend</module>
         <module>voting_backend</module>
     </modules>
+
 </project>

@@ -6,7 +6,4 @@ export class Question {
     this.id = id;
     this.title = title;
   }
-
-
-
 }

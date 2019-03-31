@@ -7,18 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
+        <module name="voting_backend" />
         <module name="voting_frontend" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="11" />
       <module name="V" target="1.8" />
+      <module name="voting_backend" target="11" />
       <module name="voting_frontend" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="voting_backend" options="-parameters" />
       <module name="voting_frontend" options="-parameters" />
     </option>
   </component>

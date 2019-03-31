@@ -1,64 +1,45 @@
-import { Component, OnInit } from '@angular/core';
-import {QuestionService} from "../services/question.service";
-import { Question } from "./question.model";
-import {Answer} from "../answer/answer.model";
-import {UserService} from "../services/user.service";
-import {ToasterService} from "angular2-toaster";
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {QuestionService} from '../services/question.service';
+import {Question} from './question.model';
+import {Answer} from '../answer/answer.model';
+import {ToasterService} from 'angular2-toaster';
+import {interval, Unsubscribable} from 'rxjs';
+
+const answersCached: Array<Answer> = [new Answer('Yes', 'true'), new Answer('No', 'false')];
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.css']
+  styleUrls: ['./question.component.scss']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent implements OnInit, OnDestroy {
 
-  private question : Question;
-  private interval : number;
-  private answersCached : Array<Answer>;
-  private answers : Array<Answer>;
+  private question: Question;
+  private answers: Array<Answer> = answersCached;
+  private intervalSubscription: Unsubscribable;
+  private questionSubscription: Unsubscribable;
 
-  constructor(
-    private questionService: QuestionService,
-    private userService: UserService,
-    private toaster: ToasterService) {
-    this.answersCached = [
-      new Answer("Yes", "true"),
-      new Answer("No", "false")
-    ];
+  constructor(private questionService: QuestionService,
+              private toaster: ToasterService) {
   }
 
-  ngOnInit() {
-    this.interval = setInterval(() => {
-      this.questionService.getLastQuestion();
-    }, 1000);
-
-    this.questionService.question.subscribe(question => {
-      if( question == null ) question = new Question();
-      this.question = question;
-      if( typeof this.question.id !== 'undefined' ) {
-        this.answers = this.answersCached;
-      }
-      console.log(this.question.id);
-    });
-
-    this.userService.createUserId();
+  ngOnInit(): void {
+    this.intervalSubscription = interval(1000).subscribe(() => this.questionService.getLastQuestion());
+    this.questionSubscription = this.questionService.question.subscribe(question => this.question = question);
   }
 
-  public answer(value: boolean){
-    console.log(value);
-    this.questionService.answerQuestion(this.question, value).then(res => {
-      console.log(res);
-      this.toaster.pop('success', "Thanks for answer.")
-    }).catch(err => {
-      console.log(err);
-
-      this.toaster.pop('error', err.error);
-    });
+  public answer(value: boolean): void {
+    this.questionService.answerQuestion(this.question, value)
+      .subscribe(() => this.toaster.pop('success', 'Thanks for answer.'),
+        err => this.toaster.pop('error', err.error));
   }
 
-  ngOnDestroy() {
-    if (this.interval) {
-      clearInterval(this.interval);
+  ngOnDestroy(): void {
+    if (this.intervalSubscription) {
+      this.intervalSubscription.unsubscribe();
+    }
+    if (this.questionSubscription) {
+      this.questionSubscription.unsubscribe();
     }
   }
 

@@ -11,17 +11,13 @@ public class ShellQuestionController {
     @Autowired
     private QuestionService questionService;
 
-
     @ShellMethod("Create new question.")
     public void qc(String question){
-
-        Long id = questionService.createQuestion(question);
-
+        final Long id = questionService.createQuestion(question);
         if( id == null ) {
             System.out.println("Something went wrong.");
             return;
         }
-
         System.out.println("Created question with id = "+id);
     }
 }

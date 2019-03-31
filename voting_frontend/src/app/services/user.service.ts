@@ -1,20 +1,25 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {LocalStorageService} from './local-storage.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class UserService {
 
-  constructor() { }
-
-  public createUserId(): void {
-    if( localStorage.getItem('userId') == null ) {
-      let id = Math.floor(100000000 + Math.random() * 900000000).toString();
-      localStorage.setItem('userId', id);
+  public initUser(): void {
+    if (!this.isPresentUser()) {
+      const id = this.generateUserId();
+      LocalStorageService.setUserId(id);
     }
   }
 
+  private isPresentUser(): boolean {
+    return !!LocalStorageService.getUserId();
+  }
+
+  private generateUserId(): number {
+    return Math.floor(100000000 + Math.random() * 900000000);
+  }
+
   public getUserId(): number {
-    return parseInt(localStorage.getItem('userId'));
+    return LocalStorageService.getUserId();
   }
 }

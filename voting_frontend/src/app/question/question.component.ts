@@ -19,7 +19,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
 
   public question: Question;
   public answers: Answer<any>[] = answersCached;
-  public disabled = false;
+  public buttonDisabled = false;
   private questionSubscription: Unsubscribable;
 
   constructor(private questionService: QuestionService,
@@ -31,14 +31,14 @@ export class QuestionComponent implements OnInit, OnDestroy {
       .pipe(filter(q => !this.question || q.id !== this.question.id))
       .subscribe(question => {
         this.question = question;
-        this.disabled = false;
+        this.buttonDisabled = false;
       });
   }
 
   public selectedAnswer(answer: Answer<any>): void {
     this.questionService.answerQuestion(this.question, answer)
       .subscribe(() => {
-          this.disabled = true;
+          this.buttonDisabled = true;
           this.toaster.pop('success', 'Thanks for answer.');
         },
         err => this.toaster.pop('error', err.error));

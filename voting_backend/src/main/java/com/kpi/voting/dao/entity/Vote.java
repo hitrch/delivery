@@ -4,7 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table( name = "vote" )
+@Table(name = "vote")
 public class Vote {
 
     @Id
@@ -15,7 +15,7 @@ public class Vote {
     private Boolean answer;
 
     @ManyToOne
-    @JoinColumn(name="question_id", nullable=false)
+    @JoinColumn(name = "question_id", nullable = false)
     private Question question;
 
     @NotNull

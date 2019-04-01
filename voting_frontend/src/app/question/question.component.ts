@@ -3,9 +3,12 @@ import {QuestionService} from '../services/question.service';
 import {Question} from './question.model';
 import {Answer} from '../answer/answer.model';
 import {ToasterService} from 'angular2-toaster';
-import {interval, Unsubscribable} from 'rxjs';
+import {Unsubscribable} from 'rxjs';
+import {filter} from 'rxjs/operators';
 
-const answersCached: Array<Answer> = [new Answer('Yes', 'true'), new Answer('No', 'false')];
+const answersCached: Answer<boolean>[] =
+  [new Answer('Yes', true, {'background-color': '#4CAF50'}),
+    new Answer('No', false, {'background-color': 'red'})];
 
 @Component({
   selector: 'app-question',
@@ -14,9 +17,9 @@ const answersCached: Array<Answer> = [new Answer('Yes', 'true'), new Answer('No'
 })
 export class QuestionComponent implements OnInit, OnDestroy {
 
-  private question: Question;
-  private answers: Array<Answer> = answersCached;
-  private intervalSubscription: Unsubscribable;
+  public question: Question;
+  public answers: Answer<any>[] = answersCached;
+  public disabled = false;
   private questionSubscription: Unsubscribable;
 
   constructor(private questionService: QuestionService,
@@ -24,20 +27,24 @@ export class QuestionComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.intervalSubscription = interval(1000).subscribe(() => this.questionService.getLastQuestion());
-    this.questionSubscription = this.questionService.question.subscribe(question => this.question = question);
+    this.questionSubscription = this.questionService.question
+      .pipe(filter(q => !this.question || q.id !== this.question.id))
+      .subscribe(question => {
+        this.question = question;
+        this.disabled = false;
+      });
   }
 
-  public answer(value: boolean): void {
-    this.questionService.answerQuestion(this.question, value)
-      .subscribe(() => this.toaster.pop('success', 'Thanks for answer.'),
+  public selectedAnswer(answer: Answer<any>): void {
+    this.questionService.answerQuestion(this.question, answer)
+      .subscribe(() => {
+          this.disabled = true;
+          this.toaster.pop('success', 'Thanks for answer.');
+        },
         err => this.toaster.pop('error', err.error));
   }
 
   ngOnDestroy(): void {
-    if (this.intervalSubscription) {
-      this.intervalSubscription.unsubscribe();
-    }
     if (this.questionSubscription) {
       this.questionSubscription.unsubscribe();
     }

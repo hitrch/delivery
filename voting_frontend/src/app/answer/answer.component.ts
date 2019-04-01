@@ -1,26 +1,22 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Answer} from './answer.model';
 
 @Component({
   selector: 'app-answer',
   templateUrl: './answer.component.html',
-  styleUrls: ['./answer.component.css']
+  styleUrls: ['./answer.component.scss']
 })
 export class AnswerComponent {
 
+  @Input()
+  public answer: Answer<any>;
+  @Input()
+  public disabled: boolean;
   @Output()
-  private select = new EventEmitter<string>();
+  public select = new EventEmitter<Answer<any>>();
 
-  @Input()
-  private name: string;
-
-  @Input()
-  private value: string;
-
-  constructor() { }
-
-  public answerQuestion(value){
-    this.select.emit(value);
+  public answerQuestion(answer: Answer<any>): void {
+    this.select.emit(answer);
   }
-
 
 }

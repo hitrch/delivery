@@ -1,8 +1,8 @@
-package com.kpi.voting.dao.entity;
+package com.kpi.voting.dto;
 
 import javax.validation.constraints.NotNull;
 
-public class RequestVote {
+public class RequestVoteDto {
 
     @NotNull
     private int id;

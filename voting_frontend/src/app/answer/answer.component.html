@@ -1,1 +1,3 @@
-<button (click)="answerQuestion(value)">{{ name }}</button>
+<button [ngStyle]="answer.style" [disabled]="disabled" (click)="answerQuestion(answer)">
+  {{answer.name}}
+</button>

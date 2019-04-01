@@ -22,4 +22,5 @@ export class UserService {
   public getUserId(): number {
     return LocalStorageService.getUserId();
   }
+
 }

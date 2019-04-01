@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.Date;
 
 @Entity
-@Table( name = "question" )
+@Table(name = "question")
 @Cacheable(false)
 public class Question {
     @Id
@@ -22,9 +22,8 @@ public class Question {
     @Temporal(TemporalType.DATE)
     private Date createdAt;
 
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
     private Collection<Vote> votes;
-
 
     @Fetch(FetchMode.SUBSELECT)
     @Formula("(select count(*) from vote where vote.answer = true)")
@@ -82,9 +81,9 @@ public class Question {
     }
 
     @Override
-    public String toString(){
-        String toString = "Question: "+this.getTitle() + "\n" +
-                            "Yes: "+ this.getVoteYesCount() + "\tNo: " + this.getVoteNoCount();
+    public String toString() {
+        String toString = "Question: " + this.getTitle() + "\n" +
+                "Yes: " + this.getVoteYesCount() + "\tNo: " + this.getVoteNoCount();
         return toString;
     }
 }

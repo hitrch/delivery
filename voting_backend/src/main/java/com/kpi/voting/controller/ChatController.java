@@ -1,5 +1,7 @@
 package com.kpi.voting.controller;
 
+import com.kpi.voting.domain.ChatService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -11,11 +13,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("chat")
 public class ChatController {
 
+    @Autowired
+    private ChatService chatService;
+
     @PutMapping()
-    public void answer(@RequestBody String message) {
-        System.out.println();
-        System.out.println("Message: " + message);
-        System.out.println();
+    public void sendMessage(@RequestBody String message) {
+        chatService.saveMessage(message);
     }
 
 }

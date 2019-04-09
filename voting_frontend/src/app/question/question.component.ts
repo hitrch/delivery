@@ -28,7 +28,17 @@ export class QuestionComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.questionSubscription = this.questionService.question
-      .pipe(filter(q => q !== null && q.id !== this.question.id))
+      .pipe(filter(q => {
+        if (!this.question && q) {
+          return true;
+        }
+
+        if (this.question && q && q.id !== this.question.id) {
+          return true;
+        } else {
+          return false;
+        }
+      }))
       .subscribe(question => {
         this.question = question;
         this.buttonDisabled = false;

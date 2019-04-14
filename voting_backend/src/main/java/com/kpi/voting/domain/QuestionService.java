@@ -16,15 +16,13 @@ public class QuestionService {
 
     public Question getLastQuestion() {
         Optional<Question> question = questionRepository.findTopByOrderByIdDesc();
-        if (question.isEmpty()) return null;
-        return question.get();
+        return question.orElse(null);
     }
 
     @Transactional
     public Question getQuestion(Long id) {
         Optional<Question> question = questionRepository.findById(id);
-        if (question.isEmpty()) return null;
-        return question.get();
+        return question.orElse(null);
     }
 
     public Long createQuestion(String title) {

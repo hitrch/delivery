@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { StudentQuestionListComponent } from './student-question/student-question-list/student-question-list.component';
 import { QuestionFinderComponent } from './question-finder/question-finder.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { QuestionFinderComponent } from './question-finder/question-finder.compo
     AnswerComponent,
     StudentQuestionItemComponent,
     StudentQuestionListComponent,
-    QuestionFinderComponent
+    QuestionFinderComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

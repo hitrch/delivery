@@ -9,10 +9,10 @@
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>voting_backend</artifactId>
+    <artifactId>delivery_backend</artifactId>
     <version>0.0.1</version>
-    <name>voting_backend</name>
-    <description>Kpi voting example Backend</description>
+    <name>delivery_backend</name>
+    <description>Kpi delivery example Backend</description>
     <!--<packaging>war</packaging>-->
 
     <properties>
@@ -71,7 +71,7 @@
     </dependencies>
 
     <build>
-        <finalName>voting_backend</finalName>
+        <finalName>delivery_backend</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

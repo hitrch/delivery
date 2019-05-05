@@ -11,8 +11,8 @@
 
   <artifactId>frontend</artifactId>
   <version>0.0.1</version>
-  <name>voting_frontend</name>
-  <description>Kpi voting example frontend</description>
+  <name>delivery_frontend</name>
+  <description>Kpi delivery example frontend</description>
 
   <build>
     <plugins>
@@ -63,7 +63,7 @@
 
     <resources>
       <resource>
-        <directory>target/voting_frontend</directory>
+        <directory>target/delivery_frontend</directory>
         <targetPath>static</targetPath>
       </resource>
     </resources>

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/V.iml" filepath="$PROJECT_DIR$/.idea/V.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/D.iml" filepath="$PROJECT_DIR$/.idea/D.iml" />
       <module fileurl="file://$PROJECT_DIR$/delivery_backend/backend.iml" filepath="$PROJECT_DIR$/delivery_backend/backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/voting_backend/demo.iml" filepath="$PROJECT_DIR$/voting_backend/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/delivery_backend/demo.iml" filepath="$PROJECT_DIR$/delivery_backend/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/delivery_frontend/frontend.iml" filepath="$PROJECT_DIR$/delivery_frontend/frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/voting_frontend/voting_frontend.iml" filepath="$PROJECT_DIR$/voting_frontend/voting_frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/delivery_frontend/delivery_frontend.iml" filepath="$PROJECT_DIR$/delivery_frontend/delivery_frontend.iml" />
     </modules>
   </component>
 </project>

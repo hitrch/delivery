@@ -1,12 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {UserService} from './services/user.service';
 import {interval, Unsubscribable} from 'rxjs';
-import {QuestionService} from './services/question.service';
+/*import {QuestionService} from './services/question.service';*/
 import {HttpClient} from '@angular/common/http';
 import {ToasterService} from 'angular2-toaster';
 
 export enum ViewState {
-  MAIN_QUESTION, STUDENT_QUESTION, QUESTION, CHAT, NOTE
+  MAIN_QUESTION, CHAT, ORDER
 }
 
 @Component({
@@ -22,14 +22,14 @@ export class AppComponent implements OnInit, OnDestroy {
   private intervalSubscription: Unsubscribable;
 
   constructor(private userService: UserService,
-              private questionService: QuestionService,
+              /*private questionService: QuestionService,*/
               private httpClient: HttpClient,
               private toaster: ToasterService) {
   }
 
   ngOnInit(): void {
     this.userService.initUser();
-    this.intervalSubscription = interval(1000).subscribe(() => this.questionService.getLastQuestion());
+    /*this.intervalSubscription = interval(1000).subscribe(() => this.questionService.getLastQuestion());*/
   }
 
   sendMessage(message: string): void {

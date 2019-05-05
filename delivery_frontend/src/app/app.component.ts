@@ -16,7 +16,7 @@ export enum ViewState {
 })
 export class AppComponent implements OnInit, OnDestroy {
 
-  title = 'Voting Application';
+  title = 'Delivery 2035';
   readonly viewState = ViewState;
   state: ViewState = ViewState.MAIN_QUESTION;
   private intervalSubscription: Unsubscribable;

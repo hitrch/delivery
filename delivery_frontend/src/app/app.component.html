@@ -4,31 +4,32 @@
   </h1>
 </div>
 <button (click)="state = viewState.MAIN_QUESTION">Main</button>
-<button (click)="state = viewState.STUDENT_QUESTION">Student</button>
-<button (click)="state = viewState.QUESTION">Question</button>
+<!--button (click)="state = viewState.STUDENT_QUESTION">Student</button>
+<button (click)="state = viewState.QUESTION">Question</button-->
 <button (click)="state = viewState.CHAT">Chat</button>
-<button (click)="state = viewState.NOTE">Note</button>
-- State {{state}}
+<!--<button (click)="state = viewState.NOTE">Note</button>>
+- State {{state}}-->
 <br>
 <div [ngSwitch]="state">
   <div *ngSwitchCase="viewState.MAIN_QUESTION">
     <div style="text-align:center">
-      <input #message>
+      <!--input #message>
       <button (click)="sendMessage(message.value)">Send Message</button>
       <app-question></app-question>
-      <toaster-container></toaster-container>
+      <toaster-container></toaster-container!-->
+      <img src = "../assets/kyiv.png">
     </div>
   </div>
-  <div *ngSwitchCase="viewState.STUDENT_QUESTION">
+  <!--div *ngSwitchCase="viewState.STUDENT_QUESTION">
     <app-student-question-list></app-student-question-list>
   </div>
   <div *ngSwitchCase="viewState.QUESTION">
     <app-question-finder></app-question-finder>
-  </div>
+  </div-->
   <div *ngSwitchCase="viewState.CHAT">
     <app-chat></app-chat>
   </div>
-  <div *ngSwitchCase="viewState.NOTE">
+  <!--div *ngSwitchCase="viewState.NOTE">
     <app-note></app-note>
-  </div>
+  </div-->
 </div>

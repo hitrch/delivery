@@ -6,116 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5f7c88-494e-4a79-b53d-a9e2e7b85200" name="Default Changelist" comment="refactoring-5: Extend Chat Controller">
-      <change beforePath="$PROJECT_DIR$/.idea/V.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/V.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="8d5f7c88-494e-4a79-b53d-a9e2e7b85200" name="Default Changelist" comment="project renamed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/VotingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/VotingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/config/CustomPromptProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/config/CustomPromptProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/controller/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/controller/ShellQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/controller/ShellQuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/controller/UserShellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/controller/UserShellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/controller/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/controller/VoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/ChatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/ChatRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/VoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/VoteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/entity/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/entity/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/entity/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dao/memoryStore/ChatStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dao/memoryStore/ChatStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/domain/ChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/domain/ChatService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/domain/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/domain/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/domain/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/domain/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/domain/VoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/domain/VoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/java/com/kpi/voting/dto/RequestVoteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/voting/dto/RequestVoteDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_backend/src/test/java/com/kpi/voting/VotingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/test/java/com/kpi/voting/VotingApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/TodoList.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/node/node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/node/npm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/node/npm.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/proxy.conf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/answer/answer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/answer/answer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/answer/answer.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/answer/answer.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/answer/answer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/answer/answer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/answer/answer.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/answer/answer.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/chat/chat.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/chat/chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/chat/chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/chat/chat.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note-item/note-item.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note-item/note-item.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note-item/note-item.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note-item/note-item.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/note/note.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question-finder/question-finder.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question-finder/question-finder.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question-finder/question-finder.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question-finder/question-finder.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question-finder/question-finder.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question-finder/question-finder.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question-finder/question-finder.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question-finder/question-finder.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question/question.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question/question.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question/question.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question/question.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question/question.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question/question.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/question/question.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/question/question.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/services/local-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/services/local-storage.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/services/model/answer-response.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/services/model/answer-response.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/services/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/services/question.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-item/student-question-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-item/student-question-item.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-item/student-question-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-item/student-question-item.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-item/student-question-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-item/student-question-item.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-item/student-question-item.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-item/student-question-item.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-list/student-question-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-list/student-question-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-list/student-question-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-list/student-question-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-list/student-question-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-list/student-question-list.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/app/student-question/student-question-list/student-question-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/student-question/student-question-list/student-question-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting_frontend/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/tslint.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/voting_backend/target/" />
@@ -144,7 +36,21 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -327,6 +233,26 @@
               <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
               <item name="delivery" type="462c0819:PsiDirectoryNode" />
               <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -627,7 +553,7 @@
       <workItem from="1554796341083" duration="3459000" />
       <workItem from="1554809256496" duration="2713000" />
       <workItem from="1556876525132" duration="17234000" />
-      <workItem from="1557062887977" duration="1596000" />
+      <workItem from="1557062887977" duration="2139000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring">
       <created>1554038975406</created>
@@ -685,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554762298252</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="project renamed">
+      <created>1557064917801</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557064917801</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81289000" />
+    <option name="totallyTimeSpent" value="81832000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,9 +634,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3883249" visible="true" weight="0.20726173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3883249" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Web" order="3" side_tool="true" />
@@ -810,7 +743,8 @@
     <MESSAGE value="refactoring-4: Chat Service" />
     <MESSAGE value="refactoring-5: Extend Chat Controller" />
     <MESSAGE value="refactoring-5: Extend REST API" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring-5: Extend REST API" />
+    <MESSAGE value="project renamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="project renamed" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1167,7 +1101,7 @@
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />

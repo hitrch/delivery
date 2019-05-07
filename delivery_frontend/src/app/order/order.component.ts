@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+/*import {HttpClient} from "@angular/common/http";*/
 
 @Component({
   selector: 'app-order',
@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit, OnDestroy {
-  constructor(private httpClient: HttpClient) {}
+  constructor(/*private httpClient: HttpClient*/) {}
 
   ngOnInit(): void {
 

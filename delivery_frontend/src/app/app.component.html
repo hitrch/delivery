@@ -10,11 +10,45 @@
 <div [ngSwitch]="state">
   <div *ngSwitchCase="viewState.MAIN_QUESTION">
     <div style="text-align:center">
-      <!--input #message>
-      <button (click)="sendMessage(message.value)">Send Message</button>
-      <app-question></app-question>
-      <toaster-container></toaster-container!-->
-      <img src = "../assets/kyiv.png">
+      <img src = "../assets/kyiv.jpg" class = "kyivMap">
+
+      <div class="spaceship">
+
+
+        <svg width="300%" height="800%" xmlns="http://www.w3.org/2000/svg">
+          <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+          <defs>
+            <radialGradient id="svg_5" spreadMethod="pad" cx="0.5" cy="0.5" r="0.5">
+              <stop stop-color="#f3ff66" offset="0.30078"/>
+              <stop stop-color="#87d87c" offset="1"/>
+            </radialGradient>
+            <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_7">
+              <stop offset="0" stop-color="#44FFFF"/>
+              <stop offset="1" stop-color="#36d5f9"/>
+            </radialGradient>
+            <radialGradient id="svg_8" r="0.5" cy="0.5" cx="0.5" spreadMethod="pad">
+              <stop stop-color="#44FFFF" offset="0"/>
+              <stop stop-color="#36d5f9" offset="1"/>
+            </radialGradient>
+          </defs>
+          <g>
+            <title>background</title>
+            <rect x="-1" y="-1" width="102" height="102" id="canvas_background" fill="none"/>
+          </g>
+          <g>
+            <ellipse fill="black" stroke="white" stroke-width="1px" stroke-opacity="null" cx="140" cy="72.5" id="svg_3" rx="29.5" ry="17"/>
+            <ellipse fill="black" stroke-width="1px" stroke-opacity="null" cx="140" cy="93.5" id="svg_4" rx="84.5" ry="16" stroke="white"/>
+            <ellipse fill="#6565d3" stroke="white" stroke-width="1px" stroke-opacity="null" cx="99.5" cy="94" id="spaceship-light1" rx="8" ry="5.5"/>
+            <ellipse fill="#63ed6c" stroke="white" stroke-width="1px" stroke-opacity="null" cx="140.5" cy="93" id="spaceship-light2" rx="8" ry="5.5"/>
+            <ellipse fill="#c1579e" stroke-width="1px" stroke-opacity="null" cx="178.5" cy="93" id="spaceship-light3" rx="8" ry="5.5" stroke="white"/>
+            <line fill="none" stroke="#FFB27C" stroke-width="1px" x1="133.5" y1="57.5" x2="104.5" y2="38.5" id="svg_16" stroke-linejoin="null" stroke-linecap="null"/>
+            <line fill="none" stroke-width="1px" fill-opacity="null" x1="148.1875" y1="56.8125" x2="172" y2="37" id="svg_17" stroke-linejoin="null" stroke-linecap="null" stroke="#FFB27C"/>
+            <path fill="url(#svg_5)" stroke-width="1.5" d="m85.9325,589.43501l20.625,-481.00003l68.75001,0l20.62499,481.00003l-110,0z" id="flashlight" fill-opacity="0.7"/>
+          </g>
+        </svg>
+
+      </div>
+
     </div>
   </div>
   <div *ngSwitchCase="viewState.ORDER">

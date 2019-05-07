@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component;
 public class CustomPromptProvider implements PromptProvider {
     @Override
     public AttributedString getPrompt() {
-        return new AttributedString("voter:>");
+        return new AttributedString("delivery:>");
     }
 }

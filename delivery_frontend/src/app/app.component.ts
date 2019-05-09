@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 import {ToasterService} from 'angular2-toaster';
 
 export enum ViewState {
-  MAIN_QUESTION, CHAT, ORDER
+  CHAT, ORDER
 }
 
 @Component({
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   title = 'Delivery 2035';
   readonly viewState = ViewState;
-  state: ViewState = ViewState.MAIN_QUESTION;
+  state: ViewState = ViewState.ORDER;
   private intervalSubscription: Unsubscribable;
 
   constructor(private userService: UserService,

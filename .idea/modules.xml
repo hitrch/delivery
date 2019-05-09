@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/D.iml" filepath="$PROJECT_DIR$/.idea/D.iml" />
       <module fileurl="file://$PROJECT_DIR$/delivery_backend/backend.iml" filepath="$PROJECT_DIR$/delivery_backend/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/delivery_frontend/delivery_frontend.iml" filepath="$PROJECT_DIR$/delivery_frontend/delivery_frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/delivery_backend/demo.iml" filepath="$PROJECT_DIR$/delivery_backend/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/delivery_frontend/frontend.iml" filepath="$PROJECT_DIR$/delivery_frontend/frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/delivery_frontend/delivery_frontend.iml" filepath="$PROJECT_DIR$/delivery_frontend/delivery_frontend.iml" />
     </modules>
   </component>
 </project>

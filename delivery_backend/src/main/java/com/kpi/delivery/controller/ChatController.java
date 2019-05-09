@@ -27,5 +27,4 @@ public class ChatController {
     public void sendMessage(@RequestBody String message) {
         chatService.saveMessage(message);
     }
-
 }

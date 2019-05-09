@@ -1,8 +1,10 @@
 <div style="text-align:center">
   <img src = "../assets/kyiv.jpg" class = "kyivMap">
+</div>
+<div *ngIf="showAnimation">
   <app-spaceship></app-spaceship>
 </div>
-<div class="b-popup">
+<div *ngIf="showDialog" class="b-popup">
   <div class="b-popup-content">
     <p style="text-align:center">Destination</p>
     <input class="inputField" #destination>
@@ -11,9 +13,8 @@
     <p style="text-align:center">Price</p>
     <input type="number" class="inputField" #price>
     <br>
-    <button class="formButton" (click) = "sendOrder(destination.value, goods.value, price.value)">Submit</button>
-    <button class="formButton" >Cancel</button>
+    <button class="formButton" (click) = "sendOrder(destination.value, goods.value, price.value) || closeDialog()">Submit</button>
+    <button class="formButton" (click) = "closeDialog()">Cancel</button>
   </div>
 </div>
-<button class = "orderButton">+</button>
-
+<button class = "orderButton" (click) = "openDialog()">+</button>

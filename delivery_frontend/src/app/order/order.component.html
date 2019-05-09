@@ -1,9 +1,19 @@
+<div style="text-align:center">
+  <img src = "../assets/kyiv.jpg" class = "kyivMap">
+  <app-spaceship></app-spaceship>
+</div>
 <div class="b-popup">
   <div class="b-popup-content">
-    <input class="inputField">
-    <input class="inputField">
-    <input class="inputField">
+    <p style="text-align:center">Destination</p>
+    <input class="inputField" #destination>
+    <p style="text-align:center">Goods</p>
+    <input class="inputField" #goods>
+    <p style="text-align:center">Price</p>
+    <input type="number" class="inputField" #price>
     <br>
-    <button class="inputField" (click)="state = viewState.MAIN_QUESTION">LOL</button>
+    <button class="formButton" (click) = "sendOrder(destination.value, goods.value, price.value)">Submit</button>
+    <button class="formButton" >Cancel</button>
   </div>
 </div>
+<button class = "orderButton">+</button>
+

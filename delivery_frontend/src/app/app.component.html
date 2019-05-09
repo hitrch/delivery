@@ -4,18 +4,16 @@
   </h1>
 </div>
 <button (click)="state = viewState.MAIN_QUESTION">Main</button>
-<button (click)="state = viewState.ORDER">Order</button>
+
 <button (click)="state = viewState.CHAT">Chat</button>
 <br>
 <div [ngSwitch]="state">
   <div *ngSwitchCase="viewState.MAIN_QUESTION">
-    <div style="text-align:center">
-      <img src = "../assets/kyiv.jpg" class = "kyivMap">
-      <app-spaceship></app-spaceship>
-    </div>
+      <button (click)="state = viewState.ORDER" class = "orderButton">+</button>
   </div>
   <div *ngSwitchCase="viewState.ORDER">
     <app-order></app-order>
+    <button (click)="state = viewState.ORDER" class = "orderButton">+</button>
   </div>
   <div *ngSwitchCase="viewState.CHAT">
     <app-chat></app-chat>

@@ -45,43 +45,21 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.component.html">
+        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.html">
+        <entry file="file://$PROJECT_DIR$/delivery_frontend/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
+            <state relative-caret-position="170">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -135,7 +113,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="is72" />
+        <entry key="$PROJECT_DIR$" value="delivery" />
       </map>
     </option>
   </component>
@@ -187,12 +165,12 @@
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.scss" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.ts.html" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.scss" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.html" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.scss" />
       </list>
     </option>
   </component>
@@ -223,9 +201,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="630" />
-    <option name="y" value="-16" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="y" value="-17" />
+    <option name="width" value="684" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -249,48 +227,7 @@
           <expand>
             <path>
               <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
               <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="spaceship" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,7 +249,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554796000728" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/delivery_frontend/src/app/spaceship" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/delivery_frontend/node_modules/tslint" />
@@ -710,7 +647,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113393000" />
+    <option name="totallyTimeSpent" value="113848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,10 +659,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.37817258" visible="true" weight="0.20045386" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.37362638" visible="true" weight="0.21677852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Web" order="3" side_tool="true" />
@@ -734,11 +670,11 @@
       <window_info id="Designer" order="6" />
       <window_info id="UI Designer" order="7" />
       <window_info id="Learn" order="8" />
-      <window_info id="npm" order="9" sideWeight="0.6218274" side_tool="true" weight="0.20045386" />
+      <window_info id="npm" order="9" sideWeight="0.62637365" side_tool="true" visible="true" weight="0.21677852" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32718122" />
       <window_info anchor="bottom" id="Run Dashboard" order="2" sideWeight="0.49924356" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6891074" weight="0.35620916" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.6891074" visible="true" weight="0.3555241" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -749,7 +685,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3267974" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.46895424" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946752" weight="0.3251634" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946752" weight="0.3243626" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50075644" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Spring" order="16" />
       <window_info anchor="bottom" id="IDEtalk Messages" order="17" />
@@ -928,13 +864,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/D.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/D.iml" />
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1093,16 +1023,7 @@
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/assets/kyiv.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/assets/kyiv.png" />
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1164,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
+        <state relative-caret-position="238">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1194,6 +1115,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -5,7 +5,7 @@ import {ToasterService} from 'angular2-toaster';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
-  styleUrls: ['./order.component.scss']
+  styleUrls: ['./order.component.css']
 })
 
 export class OrderComponent {
@@ -16,10 +16,13 @@ export class OrderComponent {
   }
 
   sendOrder(destination: string, goods: string, price: string): void {
-    this.httpClient.put('order/destination', destination).subscribe(() => this.toaster.pop('success', 'Order proceeded.'));
-    this.httpClient.put('order/good', goods);
+    this.httpClient.put('order/destination', destination)
+       .subscribe();
+    this.httpClient.put('order/good', goods)
+      .subscribe();
     this.httpClient.put('order/price', +price)
-      .subscribe(() => this.toaster.pop('success', 'Order proceeded.'));
+      .subscribe(() => {this.toaster.pop('success', 'Thanks for answer.');
+        });
   }
 
   openDialog() {

@@ -41,5 +41,6 @@ public class OrderController {
     @PutMapping("order/price")
     public void sendPrice(@RequestBody Double price) {
         orderService.savePrice(price);
+        System.out.println("works");
     }
 }

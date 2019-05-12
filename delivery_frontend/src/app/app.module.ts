@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {OrderComponent} from './order/order.component';
+import {OrdersComponent} from './orders/orders.component';
 import {SpaceshipComponent} from './spaceship/spaceship.component';
 import {ToasterModule, ToasterService} from 'angular2-toaster';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -15,6 +16,7 @@ import { ChatComponent } from './chat/chat.component';
   declarations: [
     AppComponent,
     OrderComponent,
+    OrdersComponent,
     ChatComponent,
     SpaceshipComponent
   ],

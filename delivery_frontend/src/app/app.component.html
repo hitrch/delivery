@@ -4,11 +4,15 @@
   </h1>
 </div>
 <button (click)="state = viewState.ORDER">Main</button>
+<button (click)="state = viewState.ORDERS">Orders</button>
 <button (click)="state = viewState.CHAT">Chat</button>
 <br>
 <div [ngSwitch]="state">
   <div *ngSwitchCase="viewState.ORDER">
     <app-order></app-order>
+  </div>
+  <div *ngSwitchCase="viewState.ORDERS">
+    <app-orders></app-orders>
   </div>
   <div *ngSwitchCase="viewState.CHAT">
     <app-chat></app-chat>

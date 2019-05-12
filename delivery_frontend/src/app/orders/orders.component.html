@@ -1,0 +1,11 @@
+<p>Orders:</p>
+<br>
+<div *ngFor="let row of orders; let i = index; let turn">
+  <div *ngFor="let cell of row; let j = index">
+    <div *ngIf = "((i * row.length) + j)%3 === 0">Order№{{((i * row.length) + j -((i * row.length) + j)%3)/3 + 1}}:</div>
+    <div *ngIf = "((i * row.length) + j)%3 === 0">Destination: {{orders[((i * row.length) + j)%3][((i * row.length) + j -((i * row.length) + j)%3)/3]}}</div>
+    <div *ngIf = "((i * row.length) + j)%3 === 1">Good: {{orders[((i * row.length) + j)%3][((i * row.length) + j -((i * row.length) + j)%3)/3]}}</div>
+    <div *ngIf = "((i * row.length) + j)%3 === 2">Price: {{orders[((i * row.length) + j)%3][((i * row.length) + j -((i * row.length) + j)%3)/3]}}</div>
+    <div *ngIf = "((i * row.length) + j)%3 === 2"><br><br></div>
+  </div>
+</div>

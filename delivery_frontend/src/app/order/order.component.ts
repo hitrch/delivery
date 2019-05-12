@@ -32,4 +32,12 @@ export class OrderComponent {
   closeDialog() {
     this.showDialog = false;
   }
+
+  showAnima() {
+    this.showAnimation = true;
+  }
+
+  hideAnimation() {
+    this.showAnimation = false;
+  }
 }

@@ -15,17 +15,20 @@
     <bytecodeTargetLevel>
       <module name="backend" target="1.8" />
       <module name="D" target="1.8" />
+      <module name="delivery_backend" target="1.8" />
+      <module name="delivery_frontend" target="1.8" />
       <module name="demo" target="11" />
       <module name="frontend" target="1.8" />
-      <module name="delivery_frontend" target="1.8" />
+      <module name="parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="backend" options="-parameters" />
+      <module name="delivery_backend" options="-parameters" />
+      <module name="delivery_frontend" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="frontend" options="-parameters" />
-      <module name="delivery_frontend" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,18 +1,12 @@
 package com.kpi.delivery.dao;
 
 import com.kpi.delivery.dao.entity.User;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import java.util.Optional;
 
-/**
- * @author Roman.Harmash
- * @version 1.0
- * Created on 19.04.2019.
- */
-public interface UserRepository extends CrudRepository<User, Long> {
-
-    User findByName(String name);
-
-//    @Query("Select u FROM User u")
-//    User customFind();
-
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    
+    Optional<User> findByName(String name);
 }

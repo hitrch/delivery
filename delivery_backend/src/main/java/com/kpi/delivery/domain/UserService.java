@@ -5,11 +5,8 @@ import com.kpi.delivery.dao.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @author Roman.Harmash
- * @version 1.0
- * Created on 19.04.2019.
- */
+import java.util.Optional;
+
 @Service
 public class UserService {
 
@@ -17,18 +14,15 @@ public class UserService {
     private UserRepository userRepository;
 
 
-    public void createUser(String userName) {
+    public void createUser(String userName, String password) {
         User user = new User();
         user.setName(userName);
+        user.setPassword(password);
         userRepository.save(user);
     }
 
-    public Iterable<User> getAllUsers() {
-        return userRepository.findAll();
+    public User getUser(String name) {
+        Optional<User> user = userRepository.findByName(name);
+        return user.orElse(null);
     }
-
-//    public List<User> getUsersBy(Predicate<User> predicate) {
-//        return Stream.generate(userRepository.findAll().iterator()::next);
-//    }
-
 }

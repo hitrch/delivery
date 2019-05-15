@@ -9,6 +9,8 @@ import {ToasterService} from 'angular2-toaster';
 })
 
 export class OrderComponent {
+  destinations = [{target: 'My home'}, {target: 'D1'}];
+  selectedDestination = this.destinations[1].target;
   showDialog = false;
   showAnimation = false;
   constructor(private httpClient: HttpClient,
@@ -23,6 +25,10 @@ export class OrderComponent {
     this.httpClient.put('order/price', +price)
       .subscribe(() => {this.toaster.pop('success', 'Thanks for answer.');
         });
+  }
+
+  onDestinationChane(dest) {
+    this.selectedDestination = dest;
   }
 
   openDialog() {

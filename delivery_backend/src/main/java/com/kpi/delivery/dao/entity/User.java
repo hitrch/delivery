@@ -1,23 +1,21 @@
 package com.kpi.delivery.dao.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
-/**
- * @author Roman.Harmash
- * @version 1.0
- * Created on 19.04.2019.
- */
+
 @Entity
+@Table(name = "users")
+@TableGenerator(name = "id", initialValue = 0, allocationSize = 1)
 public class User {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "id")
     private Long id;
-    @Column
+    @NotNull
     private String name;
+    @NotNull
+    private String password;
 
     public User() {
     }
@@ -38,11 +36,20 @@ public class User {
         this.name = name;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

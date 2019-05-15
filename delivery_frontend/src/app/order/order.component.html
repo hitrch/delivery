@@ -7,13 +7,16 @@
 <div *ngIf="showDialog" class="b-popup">
   <div class="b-popup-content">
     <p style="text-align:center">Destination</p>
-    <input class="inputField" #destination>
+    <select [ngModel]="selectedDestination" (ngModelChange) = "onDestinationChane($event)">
+      <option [value]="i.target" *ngFor="let i of destinations">{{i.target}}</option>
+    </select>
     <p style="text-align:center">Goods</p>
     <input class="inputField" #goods>
     <p style="text-align:center">Price</p>
     <input type="number" class="inputField" #price>
     <br>
-    <button class="formButton" (click) = "sendOrder(destination.value, goods.value, price.value) || closeDialog() || showAnima()">Submit</button>
+    <button class="formButton" (click) = "sendOrder(selectedDestination, goods.value, price.value) || closeDialog() || showAnima()"
+            [disabled]="selectedDestination === '' || goods.value === '' || price.value === ''">Submit</button>
     <button class="formButton" (click) = "closeDialog()">Cancel</button>
   </div>
 </div>

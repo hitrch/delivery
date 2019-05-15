@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ChatComponent } from './chat/chat.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ChatComponent } from './chat/chat.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ToasterModule.forRoot(),
-    MatCardModule, MatTabsModule
+    MatCardModule, MatTabsModule, FormsModule
   ],
   providers: [ToasterService],
   bootstrap: [AppComponent]

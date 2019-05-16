@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {interval} from 'rxjs';
+import { interval} from 'rxjs';
+import {Order} from './order.model';
 
 @Component({
   selector: 'app-orders',
@@ -8,8 +9,8 @@ import {interval} from 'rxjs';
   styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
-
-  orders: [string[], string[], number[]] = [ [] , [] , [] ];
+  public orders: Order[] = [];
+  /*orders: [string[], string[], number[]] = [ [] , [] , [] ];*/
 
   constructor(private httpClient: HttpClient) {
     }
@@ -20,11 +21,8 @@ export class OrdersComponent implements OnInit {
   }
 
   private loadOrders(): void {
-    this.httpClient.get<string[]>('order/destination')
-      .subscribe(o => this.orders[0] = o);
-    this.httpClient.get<string[]>('order/good')
-      .subscribe(o => this.orders[1] = o);
-    this.httpClient.get<number[]>('order/price')
-      .subscribe(p => this.orders[2] = p);
+    this.httpClient.get<Order[]>('order').subscribe(orders => {
+      this.orders = orders;
+    });
   }
 }

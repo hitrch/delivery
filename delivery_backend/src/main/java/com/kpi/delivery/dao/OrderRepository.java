@@ -1,38 +1,15 @@
 package com.kpi.delivery.dao;
 
-import com.kpi.delivery.dao.memoryStore.OrderStore;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.kpi.delivery.dao.entity.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+
 @Repository
-public class OrderRepository {
+public interface OrderRepository extends JpaRepository<Order, Long> {
 
-    @Autowired
-    private OrderStore orderStore;
-
-    public void saveDestination(final String destination){
-        orderStore.addDestination(destination);
-    }
-
-    public void saveGood(final String good){
-        orderStore.addGood(good);
-    }
-
-    public void savePrice(final Double price){
-        orderStore.addPrice(price);
-    }
-
-    public List<String> findAllDestinations(){
-        return orderStore.getDestinations();
-    }
-
-    public List<String> findAllGoods(){
-        return orderStore.getGoods();
-    }
-
-    public List<Double> findAllPrices(){
-        return orderStore.getPrices();
-    }
+    List<Order> findAll();
 }
+

@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {ToasterService} from 'angular2-toaster';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Component({
   selector: 'app-order',
@@ -9,22 +8,20 @@ import {ToasterService} from 'angular2-toaster';
 })
 
 export class OrderComponent {
+  private httpPostHeader =  new HttpHeaders({
+    'Content-Type': 'application/json'
+  });
   destinations = [{target: 'My home'}, {target: 'D1'}];
   selectedDestination = this.destinations[1].target;
   showDialog = false;
   showAnimation = false;
-  constructor(private httpClient: HttpClient,
-              private toaster: ToasterService) {
+  constructor(private httpClient: HttpClient) {
   }
 
-  sendOrder(destination: string, goods: string, price: string): void {
-    this.httpClient.put('order/destination', destination)
-       .subscribe();
-    this.httpClient.put('order/good', goods)
-      .subscribe();
-    this.httpClient.put('order/price', +price)
-      .subscribe(() => {this.toaster.pop('success', 'Thanks for answer.');
-        });
+  sendOrder(destination: string, goods: string, price: string) {
+    this.httpClient.post('order',
+      JSON.stringify({ destination, goods, price }),
+      { headers: this.httpPostHeader, responseType: 'text' }).subscribe();
   }
 
   onDestinationChane(dest) {

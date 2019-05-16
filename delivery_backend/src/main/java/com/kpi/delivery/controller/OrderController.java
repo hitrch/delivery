@@ -1,45 +1,36 @@
 package com.kpi.delivery.controller;
 
+import com.kpi.delivery.dao.entity.Order;
 import com.kpi.delivery.domain.OrderService;
+import com.kpi.delivery.dto.RequestOrderDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping()
+@RequestMapping("order")
 public class OrderController {
 
     @Autowired
     private OrderService orderService;
 
-    @GetMapping("order/destination")
-    public @ResponseBody List<String> getDestination() {
-        return orderService.getAllDestinations();
+    @GetMapping
+    public @ResponseBody List<Order> getOrders() {
+        return orderService.getAllOrders();
     }
 
-    @GetMapping("order/good")
-    public @ResponseBody List<String> getGoods() {
-        return orderService.getAllGoods();
+    @PostMapping(produces = "application/json")
+    public ResponseEntity<?> order(@Valid @RequestBody RequestOrderDto order) {
+        try {
+            orderService.order(order);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @GetMapping("order/price")
-    public @ResponseBody List<Double> getPrices() {
-        return orderService.getAllPrices();
-    }
-
-    @PutMapping("order/destination")
-    public void sendDestination(@RequestBody String destination) {
-        orderService.saveDestination(destination);
-    }
-
-    @PutMapping("order/good")
-    public void sendGood(@RequestBody String good) {
-        orderService.saveGood(good);
-    }
-
-    @PutMapping("order/price")
-    public void sendPrice(@RequestBody Double price) {
-        orderService.savePrice(price);
-    }
 }

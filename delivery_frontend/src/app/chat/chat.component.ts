@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {interval} from 'rxjs';
+import {UserService} from '../services/user.service';
 
 @Component({
   selector: 'app-chat',
@@ -8,10 +9,13 @@ import {interval} from 'rxjs';
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit {
-
+  private httpPostHeader =  new HttpHeaders({
+    'Content-Type': 'application/json'
+  });
   messages: string[] = [];
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient,
+              private userService: UserService) {
   }
 
   ngOnInit() {

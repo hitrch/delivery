@@ -1,13 +1,15 @@
-<div style="text-align:center">
-  <img src = "../assets/kyiv.jpg" class = "kyivMap">
+<div style="text-align:center;">
+  <img src = "../assets/kyivnew.jpg" class = "kyivMap">
 </div>
 <div *ngIf="showAnimation">
   <app-spaceship></app-spaceship>
 </div>
+
+
 <div *ngIf="showDialog" class="b-popup">
   <div class="b-popup-content">
     <p style="text-align:center">Destination</p>
-    <select [ngModel]="selectedDestination" (ngModelChange) = "onDestinationChane($event)">
+    <select [ngModel]="" (ngModelChange) = "onDestinationChane($event)">
       <option [value]="i.target" *ngFor="let i of destinations">{{i.target}}</option>
     </select>
     <p style="text-align:center">Goods</p>
@@ -15,9 +17,13 @@
     <p style="text-align:center">Price</p>
     <input type="number" class="inputField" #price>
     <br>
-    <button class="formButton" (click) = "sendOrder(selectedDestination, goods.value, price.value) || closeDialog() || showAnima()"
+    <button class="formButton" (click) = "sendOrder(selectedDestination, goods.value, price.value) || closeDialog() || showAnima() || hideAnimation()"
             [disabled]="selectedDestination === '' || goods.value === '' || price.value === ''">Submit</button>
     <button class="formButton" (click) = "closeDialog()">Cancel</button>
   </div>
+  <div class="modal-footer " style="text-align:center;visibility:hidden">
+  </div>
 </div>
-<button class = "orderButton" (click) = "openDialog()">+</button>
+
+
+<button type="button" class="btn btn-default navbar-btn orderButton" (click) = "openDialog()">+</button>

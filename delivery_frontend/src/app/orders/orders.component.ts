@@ -10,13 +10,12 @@ import {Order} from './order.model';
 })
 export class OrdersComponent implements OnInit {
   public orders: Order[] = [];
-  /*orders: [string[], string[], number[]] = [ [] , [] , [] ];*/
 
   constructor(private httpClient: HttpClient) {
     }
 
     ngOnInit() {
-      interval(1000)
+      interval(10000)
         .subscribe(() => this.loadOrders());
   }
 

@@ -3,5 +3,5 @@
   <br>
 </div>
 <input #message>
-<button (click)="sendMessage(message.value); message.value = ''"
+<button (click)="sendMessage(message.value, this.userService.getUserId()); message.value = ''"
         [disabled]="message.value === ''">Sent</button>

@@ -33,4 +33,9 @@ public class OrderService {
         boolean isOrderCreated = createOrder(order);
         if (!isOrderCreated) throw new OperationNotSupportedException("Error while creating order.");
     }
+
+    public boolean deleteAllOrders(){
+        orderRepository.deleteAll();
+        return true;
+    }
 }

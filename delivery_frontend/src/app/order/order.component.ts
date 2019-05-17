@@ -11,12 +11,14 @@ export class OrderComponent {
   private httpPostHeader =  new HttpHeaders({
     'Content-Type': 'application/json'
   });
-  destinations = [{target: 'My home'}, {target: 'D1'}];
-  selectedDestination = this.destinations[1].target;
+  destinations = [{target: 'My home'}];
+  selectedDestination = this.destinations[0].target;
   showDialog = false;
   showAnimation = false;
   constructor(private httpClient: HttpClient) {
   }
+
+
 
   sendOrder(destination: string, goods: string, price: string) {
     this.httpClient.post('order',
@@ -40,7 +42,13 @@ export class OrderComponent {
     this.showAnimation = true;
   }
 
+  async delay(ms: number) {
+    await new Promise(resolve => setTimeout(() => resolve(), ms));
+  }
+
   hideAnimation() {
-    this.showAnimation = false;
+    this.delay(5000).then(() => {
+      this.showAnimation = false;
+    });
   }
 }

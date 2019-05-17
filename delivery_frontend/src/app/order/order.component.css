@@ -16,7 +16,7 @@
   width:300px;
   height: 230px;
   padding:10px;
-  background-color: #c5c5c5;
+  background-color: #ffffff;
   border-radius:5px;
   box-shadow: 0px 0px 10px #000;
   position:fixed;
@@ -34,16 +34,13 @@ p{
 
 .formButton{
   width:50%;
+  background-color: #ffffff;
+  pudding-bottom: 20px;
+  radius-border: 10px;
 }
+
 
 .orderButton {
-  box-shadow: 0 0 50px rgba(0,0,0,0.5);
-  font-size: 25px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  position: fixed;
-  bottom: 30px;
-  right: 0px;
+  top: 50px;
+  left: 50px;
 }
-

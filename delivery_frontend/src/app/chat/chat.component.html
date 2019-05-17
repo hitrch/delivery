@@ -1,3 +1,6 @@
+<div class="container mg-header">
+  <div class="row">
+    <div class="col-4">
 <div *ngFor="let message of messages">
   {{message}}
   <br>
@@ -5,3 +8,10 @@
 <input #message>
 <button (click)="sendMessage(message.value); message.value = ''"
         [disabled]="message.value === ''">Sent</button>
+  </div>
+
+  <div class="col-8">
+    <img src = "../assets/dron.jpg" >
+  </div>
+  </div>
+</div>

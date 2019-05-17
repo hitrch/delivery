@@ -1,20 +1,39 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}.
-  </h1>
+<div class="mg-header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"  href="#"(click)="state = viewState.ORDER">Welcome to {{title}}.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto smooth-scroll">
+        <li class="nav-item">
+          <a class="nav-link" data-offset="90" (click)="state = viewState.ORDER">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-offset="90" (click)="state = viewState.ORDERS">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-offset="90" (click)="state = viewState.CHAT">Chat</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="view">
+
+  <div [ngSwitch]="state">
+    <div *ngSwitchCase="viewState.ORDER">
+      <app-order></app-order>
+    </div>
+    <div *ngSwitchCase="viewState.ORDERS">
+      <app-orders></app-orders>
+    </div>
+    <div *ngSwitchCase="viewState.CHAT">
+      <app-chat></app-chat>
+    </div>
+  </div>
 </div>
-<button (click)="state = viewState.ORDER">Main</button>
-<button (click)="state = viewState.ORDERS">Orders</button>
-<button (click)="state = viewState.CHAT">Chat</button>
-<br>
-<div [ngSwitch]="state">
-  <div *ngSwitchCase="viewState.ORDER">
-    <app-order></app-order>
-  </div>
-  <div *ngSwitchCase="viewState.ORDERS">
-    <app-orders></app-orders>
-  </div>
-  <div *ngSwitchCase="viewState.CHAT">
-    <app-chat></app-chat>
-  </div>
 </div>

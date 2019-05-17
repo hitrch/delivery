@@ -2,10 +2,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"  href="#"(click)="state = viewState.ORDER">Welcome to {{title}}.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav mr-auto smooth-scroll">
         <li class="nav-item">
           <a class="nav-link" data-offset="90" (click)="state = viewState.ORDER">Main</a>
@@ -14,7 +14,7 @@
           <a class="nav-link" data-offset="90" (click)="state = viewState.ORDERS">Orders</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-offset="90" (click)="state = viewState.CHAT">Chat</a>
+          <a class="nav-link" data-offset="90" (click)="state = viewState.CHAT">Help</a>
         </li>
 
       </ul>
@@ -37,3 +37,4 @@
   </div>
 </div>
 </div>
+

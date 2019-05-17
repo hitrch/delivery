@@ -1,0 +1,11 @@
+p{
+  font-family:"Times New Roman", Times, serif;
+  font-size: 25px;
+
+}
+.border_block {
+  border-radius:25px;
+  border-color:white;
+  border-width: 1px;
+  z-index:1000;
+}

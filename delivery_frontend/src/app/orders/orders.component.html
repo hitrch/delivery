@@ -1,12 +1,14 @@
 <div class="mg-header container">
   <div class="row">
-<div class="col">
+<div class="col border_block">
   <h2>Orders:</h2>
-  <div  *ngFor="let order of orders; let i = index" >
-    <h3>Order№: {{i+1}}</h3>
-    <h3>Destinaion: {{order.destination}}</h3>
-    <h3>Goods: {{order.goods}}</h3>
-    <h3>Price: {{order.price}}</h3>
+  <div  *ngFor="let order of orders; let i = index">
+    <div  class="border_block" >
+    <p>Order№: {{i+1}}</p>
+    <p>Destinaion: {{order.destination}}</p>
+    <p>Goods: {{order.goods}}</p>
+    <p>Price: {{order.price}}</p>
+    </div>
     <br><br>
   </div>
 </div>
@@ -14,7 +16,7 @@
     <h2> ABOUT US </h2>
   Today’s customers are always on the go and want their products faster and cheaper than ever before. Global interconnectedness is growing. That’s why you need a powerful, international network to manage your supply chain.
   <br>
-  With 380,000 people in over 220 countries and territories worldwide, we’re reaching more people than ever. And, as we’re already thinking about what the world in 2050 might look like, we’re preparing for the logistics challenges that lie ahead.
+  With 380,000 people in over 220 countries and territories worldwide, we’re reaching more people than ever. And, as we’re already thinking about what the world in 2035 might look like, we’re preparing for the logistics challenges that lie ahead.
   <br>
   Because we’re not only delivering packages. It’s our goal to bring joy and prosperity to the people we serve. Everywhere. Every day.
 </div>

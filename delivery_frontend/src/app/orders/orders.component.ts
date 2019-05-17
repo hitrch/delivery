@@ -15,7 +15,7 @@ export class OrdersComponent implements OnInit {
     }
 
     ngOnInit() {
-      interval(10000)
+      interval(1000)
         .subscribe(() => this.loadOrders());
   }
 

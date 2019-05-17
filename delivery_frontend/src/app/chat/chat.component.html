@@ -6,8 +6,8 @@
   <br>
 </div>
 <input #message>
-<button (click)="sendMessage(message.value, this.userService.getUserId()); message.value = ''"
-        [disabled]="message.value === ''">Sent</button>
+<button (click)="sendMessage(message.value); message.value = ''"
+        [disabled]="message.value === ''">Send</button>
   </div>
 
   <div class="col-8">

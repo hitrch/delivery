@@ -41,6 +41,7 @@ p{
 
 
 .orderButton {
-  top: 50px;
-  left: 50px;
+  top: 100px;
+  right: 50px;
+  position: absolute;
 }

@@ -18,8 +18,6 @@ export class OrderComponent {
   constructor(private httpClient: HttpClient) {
   }
 
-
-
   sendOrder(destination: string, goods: string, price: string) {
     this.httpClient.post('order',
       JSON.stringify({ destination, goods, price }),

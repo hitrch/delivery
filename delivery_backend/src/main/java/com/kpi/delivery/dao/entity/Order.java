@@ -1,6 +1,4 @@
 package com.kpi.delivery.dao.entity;
-
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 

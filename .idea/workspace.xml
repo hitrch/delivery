@@ -7,18 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d5f7c88-494e-4a79-b53d-a9e2e7b85200" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testDb.h2.db" beforeDir="false" afterPath="$PROJECT_DIR$/testDb.h2.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testDb.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/testDb.lock.db" afterDir="false" />
     </list>
     <list id="71294541-06a1-4e7d-9ff2-6b9b8a717480" name="Apply: UI" comment="" />
     <list id="b31fde55-fe36-413f-a21f-0f1c27add7d0" name="UI" comment="UI">
@@ -65,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+            <state relative-caret-position="102">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -83,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="85">
               <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -92,11 +86,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,19 +101,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="117" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="117" />
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
               <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,11 +220,11 @@
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/angular.json" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.css" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.html" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" />
       </list>
     </option>
   </component>
@@ -280,17 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="V" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,6 +309,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="V" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -631,8 +620,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="Spring Boot.DeliveryApplication" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
         <item itemvalue="Docker.application_server/Dockerfile" />
       </list>
@@ -677,7 +666,8 @@
       <workItem from="1558200476724" duration="5613000" />
       <workItem from="1558206301385" duration="4902000" />
       <workItem from="1558213778119" duration="3123000" />
-      <workItem from="1558217551403" duration="1325000" />
+      <workItem from="1558217551403" duration="1877000" />
+      <workItem from="1558347763845" duration="4153000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring">
       <created>1554038975406</created>
@@ -812,11 +802,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558100964378</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="gmap added">
+      <created>1558220360648</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558220360648</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214904000" />
+    <option name="totallyTimeSpent" value="219609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,10 +825,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3530928" visible="true" weight="0.20953101" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.35130718" visible="true" weight="0.21255673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Web" order="3" side_tool="true" />
@@ -840,7 +836,7 @@
       <window_info id="Designer" order="6" />
       <window_info id="UI Designer" order="7" />
       <window_info id="Learn" order="8" />
-      <window_info id="npm" order="9" sideWeight="0.6469072" side_tool="true" weight="0.20953101" />
+      <window_info id="npm" order="9" sideWeight="0.6486928" side_tool="true" weight="0.21255673" />
       <window_info anchor="bottom" id="SQL Generator" order="0" show_stripe_button="false" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3267974" />
@@ -960,20 +956,14 @@
     <MESSAGE value="DATABASE added" />
     <MESSAGE value="UI adde" />
     <MESSAGE value="Almost finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finished" />
+    <MESSAGE value="gmap added" />
+    <option name="LAST_COMMIT_MESSAGE" value="gmap added" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a475026a-8b96-46c1-9c18-3353af505c82/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efa2eb19-a51a-4a17-a970-689d014ca593/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1240,38 +1230,7 @@
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -1280,10 +1239,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="117" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="117" />
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/node_modules/primeng/components/dialog/dialog.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>

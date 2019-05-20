@@ -13,6 +13,10 @@ import { ChatComponent } from './chat/chat.component';
 import { MapComponent } from './map/map.component';
 import {FormsModule} from '@angular/forms';
 import {GMapModule} from 'primeng/gmap';
+import {CheckboxModule} from 'primeng/checkbox';
+import {ToastModule} from 'primeng/toast';
+import {DialogModule} from 'primeng/dialog';
+import {MessageService} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -27,11 +31,14 @@ import {GMapModule} from 'primeng/gmap';
     BrowserModule,
     HttpClientModule,
     GMapModule,
+    DialogModule,
+    CheckboxModule,
+    ToastModule,
     BrowserAnimationsModule,
     ToasterModule.forRoot(),
     MatCardModule, MatTabsModule, FormsModule
   ],
-  providers: [ToasterService],
+  providers: [ToasterService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

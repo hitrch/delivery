@@ -13,6 +13,9 @@ declare var google: any;
 })
 
 export class MapComponent implements OnInit {
+
+  showAnimation = false;
+
   options: any;
 
   overlays: any[];
@@ -78,7 +81,8 @@ export class MapComponent implements OnInit {
   addMarker() {
     this.overlays.push(new google.maps.Marker({position: {lat: this.selectedPosition.lat(),
         lng: this.selectedPosition.lng()}, Goods: this.goods, Price: this.price}));
-    this.sendOrder(this.selectedPosition.lat(), this.selectedPosition.lng(), this.goods, this.price, new Date(), 0);
+    const date = new Date();
+    this.sendOrder(this.selectedPosition.lat(), this.selectedPosition.lng(), this.goods, this.price, date.toString(), 1);
     this.goods = null;
     this.price = null;
     this.dialogVisible = false;
@@ -95,11 +99,13 @@ export class MapComponent implements OnInit {
     }
   }
 
-  sendOrder(lat: string, lng: string, goods: string, price: number, date: Date, state: number) {
+  sendOrder(lat: number, lng: number, goods: string, price: number, date: string, state: number) {
     this.httpClient.post('order',
       JSON.stringify({ lat, lng, goods, price, date, state }),
       { headers: this.httpPostHeader, responseType: 'text' }).subscribe();
-    console.log(lng);
+  }
 
+  showAnima() {
+    this.showAnimation = true;
   }
 }

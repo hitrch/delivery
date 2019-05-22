@@ -11,7 +11,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.TABLE, generator="tab")
     private Long id;
 
-    @NotNull
+
     private Double lat;
 
     @NotNull

@@ -26,8 +26,8 @@ public class OrderController {
     @PostMapping(produces = "application/json")
     public ResponseEntity<?> order(@Valid @RequestBody RequestOrderDto order) {
         try {
-            orderService.order(order);
             System.out.println(order.getLat());
+            //orderService.order(order);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);

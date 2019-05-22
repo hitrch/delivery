@@ -1,3 +1,5 @@
+
+
 <p-gmap #gmap [style]="{'width':'80%','height':'602px'}" [options]="options" [overlays]="overlays"
         (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)" (onOverlayDragEnd)="handleDragEnd($event)"></p-gmap>
 
@@ -18,11 +20,15 @@
   </div>
   <p-footer>
     <div class="ui-dialog-buttonpane ui-helper-clearfix">
-      <button type="button" pButton label="Add Marker" icon="fa-plus" (click)="addMarker()"></button>
+      <button type="button" pButton label="Add Marker" icon="fa-plus" (click)="addMarker() || showAnima()"></button>
     </div>
   </p-footer>
 </p-dialog>
 
 <div class = "layout" *ngFor = "let order of overlays">
 
+</div>
+
+<div *ngIf="showAnimation">
+  <app-spaceship></app-spaceship>
 </div>

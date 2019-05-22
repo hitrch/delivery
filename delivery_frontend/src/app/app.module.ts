@@ -17,6 +17,9 @@ import {CheckboxModule} from 'primeng/checkbox';
 import {ToastModule} from 'primeng/toast';
 import {DialogModule} from 'primeng/dialog';
 import {MessageService} from 'primeng/api';
+import {ButtonModule} from 'primeng/button';
+import {DragDropModule} from 'primeng/dragdrop';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -32,8 +35,11 @@ import {MessageService} from 'primeng/api';
     HttpClientModule,
     GMapModule,
     DialogModule,
+    DragDropModule,
     CheckboxModule,
     ToastModule,
+    InputTextModule,
+    ButtonModule,
     BrowserAnimationsModule,
     ToasterModule.forRoot(),
     MatCardModule, MatTabsModule, FormsModule

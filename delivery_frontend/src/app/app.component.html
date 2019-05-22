@@ -8,13 +8,13 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav mr-auto smooth-scroll">
         <li class="nav-item">
-          <a class="nav-link" data-offset="90" (click)="state = viewState.ORDER">Main</a>
+          <a class="nav-link" data-offset="90" (click)="state = viewState.ORDER">Map</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-offset="90" (click)="state = viewState.ORDERS">Orders</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-offset="90" (click)="state = viewState.CHAT">Help</a>
+          <a class="nav-link" data-offset="90" (click)="state = viewState.CHAT">Chat</a>
         </li>
 
       </ul>
@@ -26,7 +26,7 @@
 
   <div [ngSwitch]="state">
     <div *ngSwitchCase="viewState.ORDER">
-      <app-order></app-order>
+      <app-map></app-map>
     </div>
     <div *ngSwitchCase="viewState.ORDERS">
       <app-orders></app-orders>

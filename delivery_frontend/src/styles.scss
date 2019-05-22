@@ -1,4 +1,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeng/resources/themes/nova-light/theme.css";
 /* You can add global styles to this file, and also import other style files */
 html{
   min-height: 100%;
@@ -8,7 +11,7 @@ body{
   background: linear-gradient(to bottom , #bdc3c7, #2c3e50) no-repeat ;
 }
 .mg-header{
-  margin-top:90px;
+  margin-top:55px;
 }
 a{
   cursor: pointer;

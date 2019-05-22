@@ -1,5 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {MessageService} from 'primeng/api';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {interval} from 'rxjs';
+import {Order} from '../orders/order.model';
+/*import {forEach} from "@angular/router/src/utils/collection";*/
 declare var google: any;
 
 @Component({
@@ -15,25 +19,42 @@ export class MapComponent implements OnInit {
 
   dialogVisible: boolean;
 
-  markerTitle: string;
+  goods: string;
+
+  price: number;
 
   selectedPosition: any;
 
   infoWindow: any;
 
-  draggable: boolean;
+  private httpPostHeader =  new HttpHeaders({
+    'Content-Type': 'application/json'
+  });
 
-  constructor(private messageService: MessageService) {}
+  constructor(private messageService: MessageService,
+              private httpClient: HttpClient) {
+  }
 
   ngOnInit() {
     this.options = {
-      center: {lat: 36.890257, lng: 30.707417},
-      zoom: 12
+      center: {lat: 50.44728787881339, lng: 30.45534610748291},
+      zoom: 15
     };
 
     this.initOverlays();
 
     this.infoWindow = new google.maps.InfoWindow();
+
+    /*interval(1000)
+      .subscribe(() => this.loadOrders());*/
+  }
+
+  private loadOrders(): void {
+    this.httpClient.get<Order[]>('order').subscribe(orders => {
+      /*this.overlays = orders;
+      orders.forEach(() => {
+      })*/
+    });
   }
 
   handleMapClick(event) {
@@ -42,15 +63,13 @@ export class MapComponent implements OnInit {
   }
 
   handleOverlayClick(event) {
-    const isMarker = event.overlay.getTitle !== undefined;
-
+    const isMarker = event.overlay.Goods !== undefined;
     if (isMarker) {
-      const title = event.overlay.getTitle();
-      this.infoWindow.setContent('' + title + '');
+      this.infoWindow.setContent('Goods: ' + event.overlay.Goods + '<br/>Price: ' + event.overlay.Price);
       this.infoWindow.open(event.map, event.overlay);
       event.map.setCenter(event.overlay.getPosition());
 
-      this.messageService.add({severity: 'info', summary: 'Marker Selected', detail: title});
+      this.messageService.add({severity: 'info', summary: 'Marker Selected', detail: ''});
     } else {
       this.messageService.add({severity: 'info', summary: 'Shape Selected', detail: ''});
     }
@@ -58,8 +77,10 @@ export class MapComponent implements OnInit {
 
   addMarker() {
     this.overlays.push(new google.maps.Marker({position: {lat: this.selectedPosition.lat(),
-        lng: this.selectedPosition.lng()}, title: this.markerTitle, draggable: this.draggable}));
-    this.markerTitle = null;
+        lng: this.selectedPosition.lng()}, Goods: this.goods, Price: this.price}));
+    this.sendOrder(this.selectedPosition.lat(), this.selectedPosition.lng(), this.goods, this.price, new Date(), 0);
+    this.goods = null;
+    this.price = null;
     this.dialogVisible = false;
   }
 
@@ -70,30 +91,15 @@ export class MapComponent implements OnInit {
   initOverlays() {
     if (!this.overlays || !this.overlays.length) {
       this.overlays = [
-        new google.maps.Marker({position: {lat: 36.879466, lng: 30.667648}, title: 'Konyaalti'}),
-        new google.maps.Marker({position: {lat: 36.883707, lng: 30.689216}, title: 'Ataturk Park'}),
-        new google.maps.Marker({position: {lat: 36.885233, lng: 30.702323}, title: 'Oldtown'}),
-        new google.maps.Polygon({paths: [
-            {lat: 36.9177, lng: 30.7854}, {lat: 36.8851, lng: 30.7802}, {lat: 36.8829, lng: 30.8111}, {lat: 36.9177, lng: 30.8159}
-          ], strokeOpacity: 0.5, strokeWeight: 1, fillColor: '#1976D2', fillOpacity: 0.35
-        }),
-        new google.maps.Circle({center: {lat: 36.90707, lng: 30.56533},
-          fillColor: '#1976D2', fillOpacity: 0.35, strokeWeight: 1, radius: 1500}),
-        new google.maps.Polyline({path: [{lat: 36.86149, lng: 30.63743},
-            {lat: 36.86341, lng: 30.72463}], geodesic: true, strokeColor: '#FF0000', strokeOpacity: 0.5, strokeWeight: 2})
       ];
     }
   }
 
-  zoomIn(map) {
-    map.setZoom(map.getZoom() + 1);
-  }
+  sendOrder(lat: string, lng: string, goods: string, price: number, date: Date, state: number) {
+    this.httpClient.post('order',
+      JSON.stringify({ lat, lng, goods, price, date, state }),
+      { headers: this.httpPostHeader, responseType: 'text' }).subscribe();
+    console.log(lng);
 
-  zoomOut(map) {
-    map.setZoom(map.getZoom() - 1);
-  }
-
-  clear() {
-    this.overlays = [];
   }
 }

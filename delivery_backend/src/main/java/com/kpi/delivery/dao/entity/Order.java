@@ -1,9 +1,10 @@
 package com.kpi.delivery.dao.entity;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "oders")
+@Table(name = "OderTable")
 @TableGenerator(name="tab", initialValue=0, allocationSize=1)
 public class Order {
     @Id
@@ -11,7 +12,10 @@ public class Order {
     private Long id;
 
     @NotNull
-    private String destination;
+    private Double lat;
+
+    @NotNull
+    private Double lng;
 
     @NotNull
     private String goods;
@@ -19,13 +23,11 @@ public class Order {
     @NotNull
     private Double price;
 
-    public String getDestination() {
-        return destination;
-    }
+    @NotNull
+    private String date;
 
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
+    @NotNull
+    private int state;
 
     public String getGoods() {
         return goods;
@@ -49,5 +51,37 @@ public class Order {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Double getLat() {
+        return lat;
+    }
+
+    public void setLat(Double lat) {
+        this.lat = lat;
+    }
+
+    public Double getLng() {
+        return lng;
+    }
+
+    public void setLng(Double lng) {
+        this.lng = lng;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }

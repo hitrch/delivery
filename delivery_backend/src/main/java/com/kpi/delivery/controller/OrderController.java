@@ -27,6 +27,7 @@ public class OrderController {
     public ResponseEntity<?> order(@Valid @RequestBody RequestOrderDto order) {
         try {
             orderService.order(order);
+            System.out.println(order.getLat());
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);

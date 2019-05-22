@@ -4,7 +4,10 @@ import javax.validation.constraints.NotNull;
 
 public class RequestOrderDto {
     @NotNull
-    private String destination;
+    private Double lat;
+
+    @NotNull
+    private Double lng;
 
     @NotNull
     private String goods;
@@ -12,13 +15,11 @@ public class RequestOrderDto {
     @NotNull
     private Double price;
 
-    public String getDestination() {
-        return destination;
-    }
+    @NotNull
+    private String date;
 
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
+    @NotNull
+    private int state;
 
     public String getGoods() {
         return goods;
@@ -34,5 +35,37 @@ public class RequestOrderDto {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Double getLat() {
+        return lat;
+    }
+
+    public void setLat(Double lat) {
+        this.lat = lat;
+    }
+
+    public Double getLng() {
+        return lng;
+    }
+
+    public void setLng(Double lng) {
+        this.lng = lng;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }

@@ -21,10 +21,12 @@ public class OrderService {
 
     private boolean createOrder(RequestOrderDto order) {
         Order newOrder = new Order();
-        newOrder.setDestination(order.getDestination());
+        newOrder.setLat(order.getLat());
+        newOrder.setLng(order.getLng());
         newOrder.setGoods(order.getGoods());
         newOrder.setPrice(order.getPrice());
-        newOrder = orderRepository.save(newOrder);
+        newOrder.setState(order.getState());
+        System.out.println(order.getLat());
         orderRepository.flush();
         return (newOrder.getId() != null);
     }

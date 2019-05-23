@@ -5,3 +5,16 @@
   height: 602px;
   position: absolute;
 }
+
+.order-item{
+  height:150px;
+}
+
+.number{
+  height:150px;
+  width:10px;
+}
+
+.delete{
+  width:5px;
+}

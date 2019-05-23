@@ -18,20 +18,29 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @GetMapping
-    public @ResponseBody List<Order> getOrders() {
-        return orderService.getAllOrders();
+    @GetMapping(value = "/valid")
+    public @ResponseBody List<Order> getValidOrders() {
+        return orderService.getAllValidOrders();
+    }
+
+    @GetMapping(value = "/invalid")
+    public @ResponseBody List<Order> getInvalidOrders() {
+        return orderService.getAllInvalidOrders();
     }
 
     @PostMapping(produces = "application/json")
     public ResponseEntity<?> order(@Valid @RequestBody RequestOrderDto order) {
         try {
-            System.out.println(order.getLat());
-            //orderService.order(order);
+            orderService.order(order);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
 
+    @PutMapping(value = "/{id}")
+    public @ResponseBody Boolean updateOrder(@PathVariable("id") Long id) {
+        System.out.println(id);
+        return orderService.updateOrder(id);
+    }
 }

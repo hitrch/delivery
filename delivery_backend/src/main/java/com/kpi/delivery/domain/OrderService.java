@@ -15,8 +15,20 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
-    public List<Order> getAllOrders(){
-        return orderRepository.findAll();
+    public List<Order> getAllValidOrders()
+    {
+        return orderRepository.findAllValid();
+    }
+
+    public List<Order> getAllInvalidOrders()
+    {
+        return orderRepository.findAllInvalid();
+    }
+
+    public Boolean updateOrder(Long Id){
+        orderRepository.updateOrder(Id);
+
+        return Boolean.TRUE;
     }
 
     private boolean createOrder(RequestOrderDto order) {
@@ -25,8 +37,9 @@ public class OrderService {
         newOrder.setLng(order.getLng());
         newOrder.setGoods(order.getGoods());
         newOrder.setPrice(order.getPrice());
+        newOrder.setDate(order.getDate());
         newOrder.setState(order.getState());
-        System.out.println(order.getLat());
+        newOrder = orderRepository.save(newOrder);
         orderRepository.flush();
         return (newOrder.getId() != null);
     }

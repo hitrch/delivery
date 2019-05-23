@@ -20,6 +20,7 @@ import {MessageService} from 'primeng/api';
 import {ButtonModule} from 'primeng/button';
 import {DragDropModule} from 'primeng/dragdrop';
 import {InputTextModule} from 'primeng/inputtext';
+import {VirtualScrollerModule} from 'primeng/virtualscroller';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {InputTextModule} from 'primeng/inputtext';
     DragDropModule,
     CheckboxModule,
     ToastModule,
+    VirtualScrollerModule,
     InputTextModule,
     ButtonModule,
     BrowserAnimationsModule,

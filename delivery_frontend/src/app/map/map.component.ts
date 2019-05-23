@@ -3,7 +3,8 @@ import {MessageService} from 'primeng/api';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {interval} from 'rxjs';
 import {Order} from '../orders/order.model';
-/*import {forEach} from "@angular/router/src/utils/collection";*/
+import {forEach} from '@angular/router/src/utils/collection';
+import {toNumbers} from '@angular/compiler-cli/src/diagnostics/typescript_version';
 declare var google: any;
 
 @Component({
@@ -13,8 +14,7 @@ declare var google: any;
 })
 
 export class MapComponent implements OnInit {
-
-  showAnimation = false;
+  orders: Order[] = [];
 
   options: any;
 
@@ -48,15 +48,17 @@ export class MapComponent implements OnInit {
 
     this.infoWindow = new google.maps.InfoWindow();
 
-    /*interval(1000)
-      .subscribe(() => this.loadOrders());*/
+    this.loadOrders();
   }
 
   private loadOrders(): void {
-    this.httpClient.get<Order[]>('order').subscribe(orders => {
-      /*this.overlays = orders;
-      orders.forEach(() => {
-      })*/
+    this.httpClient.get<Order[]>('order/valid').subscribe(orders => {
+      this.orders = orders;
+      this.overlays = [];
+      orders.forEach((order) => {
+        this.overlays.push(new google.maps.Marker({position: {lat: order.lat,
+            lng: order.lng}, Goods: order.goods, Price: order.price}));
+      });
     });
   }
 
@@ -79,13 +81,20 @@ export class MapComponent implements OnInit {
   }
 
   addMarker() {
-    this.overlays.push(new google.maps.Marker({position: {lat: this.selectedPosition.lat(),
-        lng: this.selectedPosition.lng()}, Goods: this.goods, Price: this.price}));
-    const date = new Date();
-    this.sendOrder(this.selectedPosition.lat(), this.selectedPosition.lng(), this.goods, this.price, date.toString(), 1);
-    this.goods = null;
-    this.price = null;
-    this.dialogVisible = false;
+    try {
+      this.overlays.push(new google.maps.Marker({position: {lat: this.selectedPosition.lat(),
+          lng: this.selectedPosition.lng()}, Goods: this.goods, Price: this.price}));
+      const date = new Date();
+      this.sendOrder(this.selectedPosition.lat(), this.selectedPosition.lng(), this.goods, this.price, date.toString(), 1);
+      this.goods = null;
+      this.price = null;
+      this.dialogVisible = false;
+      this.delay(5000).then(() => {
+        this.loadOrders();
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   handleDragEnd(event) {
@@ -105,7 +114,15 @@ export class MapComponent implements OnInit {
       { headers: this.httpPostHeader, responseType: 'text' }).subscribe();
   }
 
-  showAnima() {
-    this.showAnimation = true;
+  async delay(ms: number) {
+    await new Promise(resolve => setTimeout(() => resolve(), ms));
+  }
+  /*marking order as done*/
+  updateOrder(id: number) {
+    this.httpClient.put(`/order/${id}`,
+      { headers: this.httpPostHeader, responseType: 'text' }).subscribe();
+    this.delay(5000).then(() => {
+      this.loadOrders();
+    });
   }
 }

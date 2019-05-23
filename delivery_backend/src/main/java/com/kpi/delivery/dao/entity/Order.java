@@ -4,14 +4,14 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "OderTable")
+@Table(name = "orders")
 @TableGenerator(name="tab", initialValue=0, allocationSize=1)
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator="tab")
     private Long id;
 
-
+    @NotNull
     private Double lat;
 
     @NotNull

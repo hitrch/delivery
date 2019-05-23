@@ -1,5 +1,3 @@
-
-
 <p-gmap #gmap [style]="{'width':'80%','height':'602px'}" [options]="options" [overlays]="overlays"
         (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)" (onOverlayDragEnd)="handleDragEnd($event)"></p-gmap>
 
@@ -20,15 +18,45 @@
   </div>
   <p-footer>
     <div class="ui-dialog-buttonpane ui-helper-clearfix">
-      <button type="button" pButton label="Add Marker" icon="fa-plus" (click)="addMarker() || showAnima()"></button>
+      <button type="button" pButton label="Add Marker" icon="fa-plus" (click)="addMarker()"></button>
     </div>
   </p-footer>
 </p-dialog>
 
-<div class = "layout" *ngFor = "let order of overlays">
+<div class = "layout">
+  <p-virtualScroller [value]="orders" scrollHeight="553px" [itemSize]="150">
+    <p-header>
+      <div class="ui-g">
+        <div class="ui-g-6 title-container">
+          List of Orders
+        </div>
+      </div>
+    </p-header>
+    <ng-template let-order pTemplate="item" let-i="index">
+      <div class="ui-g order-item">
+        <div class="number">
+          <div style="font-size: 24px; text-align: center; padding-top: 54px">
+            <p-checkbox binary="true" (click) = "updateOrder(order.id)"></p-checkbox>
+          </div>
+        </div>
+        <div class="ui-g-1 ui-md-11">
+          <div class="ui-g-1 ui-md-9">
+            <div class="ui-g-3 ui-sm-4">Lat: </div>
+            <div class="ui-g-9 ui-sm-4">{{order.lat}}</div>
 
+            <div class="ui-g-3 ui-sm-4">Lng: </div>
+            <div class="ui-g-9 ui-sm-4">{{order.lng}}</div>
+
+            <div class="ui-g-4 ui-sm-4">Goods: </div>
+            <div class="ui-g-8 ui-sm-4">{{order.goods}}</div>
+
+            <div class="ui-g-3 ui-sm-4">Price: </div>
+            <div class="ui-g-9 ui-sm-4">{{order.price}}</div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-virtualScroller>
 </div>
 
-<div *ngIf="showAnimation">
-  <app-spaceship></app-spaceship>
-</div>
+

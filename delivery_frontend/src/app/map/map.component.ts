@@ -89,7 +89,7 @@ export class MapComponent implements OnInit {
       this.goods = null;
       this.price = null;
       this.dialogVisible = false;
-      this.delay(5000).then(() => {
+      this.delay(20).then(() => {
         this.loadOrders();
       });
     } catch (e) {
@@ -121,7 +121,7 @@ export class MapComponent implements OnInit {
   updateOrder(id: number) {
     this.httpClient.put(`/order/${id}`,
       { headers: this.httpPostHeader, responseType: 'text' }).subscribe();
-    this.delay(5000).then(() => {
+    this.delay(20).then(() => {
       this.loadOrders();
     });
   }

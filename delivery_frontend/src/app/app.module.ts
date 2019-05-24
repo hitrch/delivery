@@ -21,6 +21,15 @@ import {ButtonModule} from 'primeng/button';
 import {DragDropModule} from 'primeng/dragdrop';
 import {InputTextModule} from 'primeng/inputtext';
 import {VirtualScrollerModule} from 'primeng/virtualscroller';
+import {Routes, RouterModule} from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '', component: MapComponent },
+  { path: 'statistics', component:OrdersComponent },
+  { path: 'chat', component:ChatComponent },
+  { path: '**', redirectTo: '/',pathMatch: 'full'}
+];
+
 
 @NgModule({
   declarations: [
@@ -44,7 +53,11 @@ import {VirtualScrollerModule} from 'primeng/virtualscroller';
     ButtonModule,
     BrowserAnimationsModule,
     ToasterModule.forRoot(),
-    MatCardModule, MatTabsModule, FormsModule
+    MatCardModule, MatTabsModule, FormsModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }
+    )
   ],
   providers: [ToasterService, MessageService],
   bootstrap: [AppComponent]

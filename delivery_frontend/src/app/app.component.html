@@ -8,21 +8,24 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav mr-auto smooth-scroll">
         <li class="nav-item">
-          <a class="nav-link" data-offset="90" (click)="state = viewState.ORDER">Map</a>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}" class="nav-link" data-offset="90" >Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-offset="90" (click)="state = viewState.ORDERS">Orders</a>
+          <a routerLink="/statistics" routerLinkActive="active"  class="nav-link" data-offset="90" >Statistics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-offset="90" (click)="state = viewState.CHAT">Chat</a>
+          <a routerLink="/chat" routerLinkActive="active" class="nav-link" data-offset="90" >Chat</a>
         </li>
 
       </ul>
     </div>
   </div>
 </nav>
+</div>
+  <router-outlet></router-outlet>
 
-<div class="view">
+<!--<div class="view">
 
   <div [ngSwitch]="state">
     <div *ngSwitchCase="viewState.ORDER">
@@ -35,6 +38,6 @@
       <app-chat></app-chat>
     </div>
   </div>
-</div>
-</div>
+</div>-->
+
 

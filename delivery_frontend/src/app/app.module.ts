@@ -21,6 +21,7 @@ import {ButtonModule} from 'primeng/button';
 import {DragDropModule} from 'primeng/dragdrop';
 import {InputTextModule} from 'primeng/inputtext';
 import {VirtualScrollerModule} from 'primeng/virtualscroller';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {VirtualScrollerModule} from 'primeng/virtualscroller';
     VirtualScrollerModule,
     InputTextModule,
     ButtonModule,
+    ChartModule,
     BrowserAnimationsModule,
     ToasterModule.forRoot(),
     MatCardModule, MatTabsModule, FormsModule

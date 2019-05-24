@@ -8,18 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8d5f7c88-494e-4a79-b53d-a9e2e7b85200" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/domain/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/domain/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDb.h2.db" beforeDir="false" afterPath="$PROJECT_DIR$/testDb.h2.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDb.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/testDb.lock.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery_frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery_frontend/src/index.html" afterDir="false" />
     </list>
     <list id="71294541-06a1-4e7d-9ff2-6b9b8a717480" name="Apply: UI" comment="" />
     <list id="b31fde55-fe36-413f-a21f-0f1c27add7d0" name="UI" comment="UI">
@@ -74,28 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ng-template#0;n#p-virtualScroller#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html">
+        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -103,20 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="476">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -127,14 +92,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="391">
               <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,13 +104,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/domain/OrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="272">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#499#500#0" expanded="true" />
                 <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
                 <element signature="e#659#660#0" expanded="true" />
               </folding>
             </state>
@@ -159,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/OrderRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="221">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -255,7 +216,6 @@
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/services/user.service.ts" />
         <option value="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/memoryStore/ChatStore.java" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.ts" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/services/Header-toglle.js" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/services/Header-toggle.js" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/services/HeadTogg.js" />
@@ -265,15 +225,12 @@
         <option value="$PROJECT_DIR$/delivery_frontend/package.json" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.html" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/index.html" />
-        <option value="$PROJECT_DIR$/delivery_frontend/angular.json" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/styles.scss" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/orders/order.model.ts" />
         <option value="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dto/RequestOrderDto.java" />
         <option value="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/ShellOrderController.java" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4ac59a83-b86a-4b16-95c2-5e7e48b87c63/console.sql" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.css" />
         <option value="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/entity/Order.java" />
@@ -283,8 +240,12 @@
         <option value="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/OrderRepository.java" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts" />
-        <option value="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html" />
         <option value="$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/delivery_frontend/angular.json" />
+        <option value="$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts" />
       </list>
     </option>
   </component>
@@ -330,6 +291,17 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="V" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -431,17 +403,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="V" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="V" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -741,8 +702,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DeliveryApplication" />
         <item itemvalue="npm.start" />
+        <item itemvalue="Spring Boot.DeliveryApplication" />
         <item itemvalue="npm.test" />
         <item itemvalue="Docker.application_server/Dockerfile" />
       </list>
@@ -792,7 +753,8 @@
       <workItem from="1558452422380" duration="4274000" />
       <workItem from="1558457862690" duration="66000" />
       <workItem from="1558546034521" duration="24478000" />
-      <workItem from="1558620719711" duration="32236000" />
+      <workItem from="1558620719711" duration="36533000" />
+      <workItem from="1558678357416" duration="193000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring">
       <created>1554038975406</created>
@@ -955,11 +917,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558561728767</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="DB modifiable&#10;put request">
+      <created>1558655768504</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1558655768504</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294431000" />
+    <option name="totallyTimeSpent" value="298967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -972,8 +941,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3429395" visible="true" weight="0.22163388" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3429395" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Web" order="3" side_tool="true" />
@@ -987,7 +957,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3267974" />
       <window_info anchor="bottom" id="Run Dashboard" order="3" sideWeight="0.5204236" weight="0.4379085" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.5779123" visible="true" weight="0.43954247" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.5779123" weight="0.43954247" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -1106,23 +1076,14 @@
     <MESSAGE value="gmap full version added" />
     <MESSAGE value="special for ALEDJA" />
     <MESSAGE value="ALEDJA na slojniy dron" />
-    <option name="LAST_COMMIT_MESSAGE" value="ALEDJA na slojniy dron" />
+    <MESSAGE value="DB modifiable&#10;put request" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB modifiable&#10;put request" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/spaceship/spaceship.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/delivery_frontend/node_modules/rxjs/src/internal/types.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1236,25 +1197,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/delivery_frontend/node_modules/primeng/resources/primeng.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -1298,16 +1242,6 @@
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1370,67 +1304,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dto/RequestIdDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/domain/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dto/RequestIdDto.java" />
     <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/order/order.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1441,20 +1315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts">
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1468,13 +1332,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/chat/chat.component.html">
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/node_modules/chart.js/dist/Chart.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/node_modules/chart.js/dist/Chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/map/map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_frontend/src/app/orders/orders.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/domain/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery_backend/src/main/java/com/kpi/delivery/dao/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

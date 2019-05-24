@@ -1,17 +1,16 @@
-
 .spaceship {
   height: 90px;
   width: 90px;
   position: absolute;
-  top: 300px;
-  left:43%;
+  top: 70px;
+    left:75%;
   -webkit-animation-name: spaceship-motiontwo;
   animation-name: spaceship-motiontwo;
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
+  -webkit-animation-delay: 4s;
   animation-delay: 2s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
@@ -21,25 +20,87 @@
 
 @-webkit-keyframes spaceship-motiontwo {
   0% {
-    top: 200px;
-    left:43%;
+    top: 70px;
+    left:75%;
   }
 
-  100% {
-    top: 300px;
-    left: 65%;
+  50%{
+top: 70px;
+    left: 85%;
+  
+  }
+  55%{
+top: 70px;
+    left: 85%;
+  
+  }
+  60%{
+top: 90px;
+    left: 85%;
+  
+  }
+    65%{
+top: 90px;
+    left: 85%;
+  
+  }
+    70%{
+top: 90px;
+    left: 85%;
+  
+  }
+      75%{
+top: 70px;
+    left: 85%;
+  
+  }
+100% {
+    top: 70px;
+    left:75%;
+
   }
 }
 
 @keyframes spaceship-motiontwo {
   0% {
-    top: 100px;
-    left:43%;
+    top: 70px;
+    left:75%;
   }
 
-  100% {
-    top: 400px;
-    left: 65%;
+  50%{
+top: 70px;
+    left: 85%;
+  
+  }
+  55%{
+top: 70px;
+    left: 85%;
+  
+  }
+  60%{
+top: 90px;
+    left: 85%;
+  
+  }
+    65%{
+top: 90px;
+    left: 85%;
+  
+  }
+    70%{
+top: 90px;
+    left: 85%;
+  
+  }
+      75%{
+top: 70px;
+    left: 85%;
+  
+  }
+100% {
+    top: 70px;
+    left:75%;
+
   }
 }
 
@@ -48,8 +109,8 @@
   animation-name: toggle-lights-red;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
@@ -60,8 +121,8 @@
   animation-name: toggle-lights-blue;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
   -webkit-animation-iteration-count: infinite;
@@ -74,8 +135,8 @@
   animation-name: toggle-lights-green;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
   -webkit-animation-iteration-count: infinite;
@@ -84,75 +145,111 @@
 
 @-webkit-keyframes toggle-lights-red {
   0% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
     fill: #FF4136;
   }
-  50% {
+  75% {
     fill: white;
   }
   100% {
-    fill: #FF4136;
+    fill: white;
   }
 }
 
 @keyframes toggle-lights-red {
-  0% {
+    0% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
     fill: #FF4136;
   }
-  50% {
+  75% {
     fill: white;
   }
   100% {
-    fill: #FF4136;
+    fill: white;
   }
 }
 
 
 @-webkit-keyframes toggle-lights-blue {
-  0% {
+   0% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
     fill: #FF4136;
   }
-  50% {
+  75% {
     fill: white;
   }
   100% {
-    fill: #FF4136;
+    fill: white;
   }
 }
 
 
 @keyframes toggle-lights-blue {
   0% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
     fill: #FF4136;
   }
-  50% {
+  75% {
     fill: white;
   }
   100% {
-    fill: #FF4136;
+    fill: white;
   }
 }
 
 @-webkit-keyframes toggle-lights-green {
   0% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
     fill: #FF4136;
   }
-  50% {
+  75% {
     fill: white;
   }
   100% {
-    fill: #FF4136;
+    fill: white;
   }
 }
 
 @keyframes toggle-lights-green {
-  0% {
+   0% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
     fill: #FF4136;
   }
-  50% {
+  75% {
     fill: white;
   }
   100% {
-    fill: #FF4136;
+    fill: white;
   }
 }
 

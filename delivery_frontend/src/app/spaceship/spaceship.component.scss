@@ -2,8 +2,8 @@
   height: 90px;
   width: 90px;
   position: absolute;
-  top: 70px;
-    left:75%;
+  top: 590px;
+    left:1%;
   -webkit-animation-name: spaceship-motiontwo;
   animation-name: spaceship-motiontwo;
   -webkit-animation-timing-function: ease-in;
@@ -20,89 +20,90 @@
 
 @-webkit-keyframes spaceship-motiontwo {
   0% {
-    top: 70px;
-    left:75%;
+      top: 590px;
+    left:1%;
   }
 
   50%{
-top: 70px;
-    left: 85%;
+top: 590px;
+    left:70%;
   
   }
   55%{
-top: 70px;
-    left: 85%;
+top: 590px;
+    left:70%;
   
   }
   60%{
-top: 90px;
-    left: 85%;
+top: 610px;
+    left: 70%;
   
   }
     65%{
-top: 90px;
-    left: 85%;
+top: 610px;
+    left: 70%;
   
   }
     70%{
-top: 90px;
-    left: 85%;
+top: 610px;
+    left: 70%;
   
   }
       75%{
-top: 70px;
-    left: 85%;
+top: 590px;
+    left:70%;
   
   }
 100% {
-    top: 70px;
-    left:75%;
+     top: 590px;
+    left:1%;
 
   }
 }
 
 @keyframes spaceship-motiontwo {
   0% {
-    top: 70px;
-    left:75%;
+      top: 590px;
+    left:1%;
   }
 
   50%{
-top: 70px;
-    left: 85%;
+top: 590px;
+    left:70%;
   
   }
   55%{
-top: 70px;
-    left: 85%;
+top: 590px;
+    left:70%;
   
   }
   60%{
-top: 90px;
-    left: 85%;
+top: 610px;
+    left: 70%;
   
   }
     65%{
-top: 90px;
-    left: 85%;
+top: 610px;
+    left: 70%;
   
   }
     70%{
-top: 90px;
-    left: 85%;
+top: 610px;
+    left: 70%;
   
   }
       75%{
-top: 70px;
-    left: 85%;
+top: 590px;
+    left:70%;
   
   }
 100% {
-    top: 70px;
-    left:75%;
+     top: 590px;
+    left:1%;
 
   }
 }
+
 
 #spaceship-light1 {
   -webkit-animation-name: toggle-lights-red;
